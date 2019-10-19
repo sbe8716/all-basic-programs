@@ -1,0 +1,35 @@
+#include <stdio.h>
+main()
+{
+	char a[100];
+	int i=0,subhjit=0,c[100];
+	printf("Enter Your Hexadeciml pls:");
+	scanf("");
+	gets(a);
+	while(a[i]!='\0')
+	{
+		if(a[i]>='a'&&a[i]<='z')
+		{
+			c[i]=a[i]-87;
+			}
+			else if(a[i]>='A'&&a[i]<='Z')
+			{
+				c[i]=a[i]-55;
+				}
+				else if(a[i]>='0'&&a[i]<='9')
+				{
+					c[i]=a[i]-48;
+					}
+					else
+					printf("");
+					
+					
+					i++;
+					subhjit++;
+					}
+	for(i=0;i<subhjit-1;i++)
+					{
+						printf("%d\n",c[i]);
+						}
+						}
+						
