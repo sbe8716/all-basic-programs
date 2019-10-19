@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <math.h>
+main()
+{
+	char a[100];
+	int i=0,subhjit=0,c[100],count=0;
+	printf("Enter Your Hexadeciml pls:");
+	scanf("");
+	gets(a);
+	while(a[i]!='\0')
+	{
+		if(a[i]>='a'&&a[i]<='f')
+		{
+			c[i]=a[i]-87;
+			}
+			else if(a[i]>='A'&&a[i]<='F')
+			{
+				c[i]=a[i]-55;
+				}
+				else if(a[i]>='0'&&a[i]<='9')
+				{
+					c[i]=a[i]-48;
+					}
+					else
+					printf("");
+					
+					
+					i++;
+					subhjit++;
+					
+					
+					}
+	for(i=0;i<subhjit-1;i++)
+					{
+						printf("%d\n",c[i]);
+						count++;
+						}
+						i=0;
+						int deci=0;
+						while(i<count)
+						{
+							
+							
+								deci=deci+(c[i]*pow(16,(count-i-1)));
+							subhjit--;
+							
+							i++;
+						}
+						printf("the decimal %d",deci);
+						}
+						
+						
+						
