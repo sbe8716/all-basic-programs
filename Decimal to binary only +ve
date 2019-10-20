@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+main()
+{
+	long int binary;
+	int deci,d,n;
+	printf("enter the no.:");
+	scanf("%d",&deci);
+	if(deci==0)
+	{
+		printf("%8d",deci);
+		}
+		else
+		{
+			int count=0;
+			while(deci!=0||count!=8)
+			{
+				binary=deci%2;
+				deci=deci/2;
+				printf("%ld",binary);
+				count++;
+				}
+				}
+				}
+				
+	
